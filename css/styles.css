@@ -178,6 +178,9 @@ img {
   letter-spacing: 0.02em;
 
   margin-left: auto;
+
+  display: flex;
+  align-items: center;
 }
 
 .contacts-item:not(:last-child) {
@@ -189,7 +192,8 @@ img {
   color: var(--primary-text-color);
   text-decoration: none;
 
-  display: inline-block;
+  display: flex;
+  align-items: center;
 
   padding: 32px 0;
 }
@@ -199,6 +203,11 @@ img {
 .contact-number:hover,
 .contact-number:focus {
   color: var(--text-accent-color);
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Блок "ГЕРОЙ"*/
