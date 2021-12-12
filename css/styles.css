@@ -18,6 +18,11 @@
 Первичный цвет иконок: #AFB1B8
 Вторичный цвет иконок: #ffffff
 
+--------Цвет фона иконок------
+Первичный цвет фона иконок: #ffffff
+Вторичный цвет фона иконок: #ffffff
+
+
 --------Цвет акцента-----
 Первичный цвет акцента текста: #2196F3
 Первичный цвет акцента элемента: #2196F3
@@ -38,6 +43,9 @@
 
   --primary-icon-color: #afb1b8;
   --secondary-icon-color: #ffffff;
+
+  --primary-bg-color-icon: #ffffff;
+  --secondary-bg-color-icon: rgba(255, 255, 255, 0.1);
 
   --primary-text-accent-color: #2196f3;
   --primary-element-accent-color: #2196f3;
@@ -537,6 +545,10 @@ address {
   color: var(--primary-text-accent-color);
 }
 
+.our-social-networks {
+  padding-top: 12px;
+}
+
 .our-social-networks .item-title {
   margin-bottom: 20px;
 
@@ -546,6 +558,19 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+}
+
+.our-social-networks .social-network-icon-box {
+  background-color: var(--secondary-bg-color-icon);
+}
+
+.our-social-networks .social-network-icon-box:hover,
+.our-social-networks .social-network-icon-box:focus {
+  background-color: var(--primary-element-accent-color);
+}
+
+.our-social-networks .social-network-icon {
+  fill: var(--secondary-icon-color);
 }
 
 /* II. Стили страницы "Портфолио" */
