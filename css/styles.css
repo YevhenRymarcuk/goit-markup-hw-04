@@ -441,6 +441,49 @@ img {
   fill: var(--secondary-element-accent-color);
 }
 
+/* Постоянные клиенты */
+.clients .section-title-main {
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  flex-basis: calc(100% - (5 * var(--flexbox-items-gap) / 6));
+}
+
+.clients-item:not(:last-child) {
+  margin-right: var(--flexbox-items-gap);
+}
+
+.clients-icon-box {
+  width: 170px;
+  height: 92px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--primary-icon-color);
+  border-radius: 4px;
+}
+
+.clients-icon {
+  fill: var(--primary-icon-color);
+}
+
+.clients-icon-box:focus,
+.clients-icon-box:hover {
+  border: 1px solid var(--primary-element-accent-color);
+}
+
+.clients-icon-box:focus .clients-icon,
+.clients-icon-box:hover .clients-icon {
+  fill: var(--primary-element-accent-color);
+}
+
 /* Подвал сайта */
 footer {
   background-color: var(--secondary-bg-color);
