@@ -14,9 +14,14 @@
 --------Цвет кнопок------
 Первичный цвет кнопок: #F5F4FA
 
+--------Цвет иконок------
+Первичный цвет иконок: #AFB1B8
+Вторичный цвет иконок: #ffffff
+
 --------Цвет акцента-----
-Цвет акцента текста: #2196F3
-Цвет акцента элемента: #2196F3
+Первичный цвет акцента текста: #2196F3
+Первичный цвет акцента элемента: #2196F3
+Вторичный цвет акцента элемента: #ffffff
 */
 
 :root {
@@ -31,8 +36,12 @@
 
   --primary-button-color: #f5f4fa;
 
-  --text-accent-color: #2196f3;
-  --element-accent-color: #2196f3;
+  --primary-icon-color: #afb1b8;
+  --secondary-icon-color: #ffffff;
+
+  --primary-text-accent-color: #2196f3;
+  --primary-element-accent-color: #2196f3;
+  --secondary-element-accent-color: #ffffff;
 
   /* Переменная зазоров в сетках элементов */
   --flexbox-items-gap: 30px;
@@ -141,7 +150,7 @@ img {
 }
 
 .accent-logo {
-  color: var(--text-accent-color);
+  color: var(--primary-text-accent-color);
 }
 
 .footer .logo {
@@ -150,7 +159,7 @@ img {
 
 .logo:hover,
 .logo:focus {
-  color: var(--text-accent-color);
+  color: var(--primary-text-accent-color);
 }
 
 .nav-list {
@@ -174,12 +183,12 @@ img {
 }
 
 .nav-list .nav-link.current {
-  color: var(--text-accent-color);
+  color: var(--primary-text-accent-color);
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--text-accent-color);
+  color: var(--primary-text-accent-color);
 }
 
 .contacts-list {
@@ -213,7 +222,7 @@ img {
 .contact-mail:focus,
 .contact-number:hover,
 .contact-number:focus {
-  color: var(--text-accent-color);
+  color: var(--primary-text-accent-color);
 }
 
 .contact-icon {
@@ -264,7 +273,7 @@ img {
   padding: 10px 32px;
 
   color: var(--secondary-text-color);
-  background-color: var(--element-accent-color);
+  background-color: var(--primary-element-accent-color);
 
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -371,7 +380,7 @@ img {
   text-decoration: none;
 }
 
-.team-item-link-images {
+.team-item-images {
   margin-bottom: 30px;
 }
 
@@ -388,11 +397,48 @@ img {
 .team-list .item-text {
   color: var(--primary-text-color);
 
+  margin-bottom: 16px;
+
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.social-networks-list {
+  width: 206px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-network-icon-box {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-network-icon {
+  fill: var(--primary-icon-color);
+}
+
+.social-network-icon-box:hover,
+.social-network-icon-box:focus {
+  background-color: var(--primary-element-accent-color);
+}
+
+.social-network-icon-box:hover .social-network-icon,
+.social-network-icon-box:focus .social-network-icon {
+  fill: var(--secondary-element-accent-color);
 }
 
 /* Подвал сайта */
@@ -438,7 +484,7 @@ address {
 .footer .contact-mail:focus,
 .footer .contact-number:hover,
 .footer .contact-number:focus {
-  color: var(--text-accent-color);
+  color: var(--primary-text-accent-color);
 }
 
 /* II. Стили страницы "Портфолио" */
@@ -472,7 +518,7 @@ address {
 .btn:hover,
 .btn:focus {
   color: var(--secondary-text-color);
-  background-color: var(--element-accent-color);
+  background-color: var(--primary-element-accent-color);
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
