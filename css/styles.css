@@ -439,13 +439,13 @@ img {
   fill: var(--primary-icon-color);
 }
 
-.social-network-icon-box:hover,
-.social-network-icon-box:focus {
+.social-network-link:focus .social-network-icon-box,
+.social-network-link:hover .social-network-icon-box {
   background-color: var(--primary-element-accent-color);
 }
 
-.social-network-icon-box:hover .social-network-icon,
-.social-network-icon-box:focus .social-network-icon {
+.social-network-link:focus .social-network-icon,
+.social-network-link:hover .social-network-icon {
   fill: var(--secondary-element-accent-color);
 }
 
@@ -482,13 +482,13 @@ img {
   fill: var(--primary-icon-color);
 }
 
-.clients-icon-box:focus,
-.clients-icon-box:hover {
+.clients-link:focus .clients-icon-box,
+.clients-link:hover .clients-icon-box {
   border: 1px solid var(--primary-element-accent-color);
 }
 
-.clients-icon-box:focus .clients-icon,
-.clients-icon-box:hover .clients-icon {
+.clients-link:focus .clients-icon,
+.clients-link:hover .clients-icon {
   fill: var(--primary-element-accent-color);
 }
 
@@ -564,11 +564,6 @@ address {
   background-color: var(--secondary-bg-color-icon);
 }
 
-.our-social-networks .social-network-icon-box:hover,
-.our-social-networks .social-network-icon-box:focus {
-  background-color: var(--primary-element-accent-color);
-}
-
 .our-social-networks .social-network-icon {
   fill: var(--secondary-icon-color);
 }
@@ -639,8 +634,8 @@ address {
   text-decoration: none;
 }
 
-.works-item:hover,
-.works-item:focus {
+.works-item-link:hover .works-item-link-box,
+.works-item-link:focus .works-item-link-box {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
